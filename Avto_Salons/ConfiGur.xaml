@@ -1,0 +1,39 @@
+﻿<Page x:Class="Avto_Salons.ConfiGur"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Avto_Salons"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ConfiGur">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition  Height="280"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid x:Name="avto" Grid.ColumnSpan="2" SelectionChanged="avto_SelectionChanged" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id_config}" />
+                <DataGridTextColumn Header="Коплектация" Binding="{Binding name}" />
+                <DataGridTextColumn Header="Описание" Binding="{Binding description}" />
+                <DataGridTextColumn Header="Цена" Binding="{Binding price}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="Exit" Margin="0,237,0,-20" Content="Выход" Click="Exit_Click" Grid.Row="1" Grid.Column="3"/>
+        <Button x:Name="Add" Content="Добавить" Margin="0,237,0,-20" Grid.Row="1" Click="Add_Click"/>
+        <Button x:Name="Delete" Content="Удалить" Margin="0,237,0,-20" Grid.Row="1" Grid.Column="1" Click="Delete_Click"/>
+        <Button x:Name="Update" Content="Обновить" Grid.Column="2" Margin="0,237,0,-20" Grid.Row="1" Click="Update_Click"/>
+        <TextBox x:Name="komplekt" Text="Комплектация" Margin="0,77,0,161" Grid.Row="1"/>
+        <TextBox x:Name="opisanie" Text="Описание" Margin="0,119,0,119" Grid.Row="1"/>
+        <TextBox x:Name="cena" Text="Цена" Margin="0,161,0,77" Grid.Row="1"/>
+    </Grid>
+</Page>

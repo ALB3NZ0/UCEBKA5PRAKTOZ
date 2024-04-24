@@ -1,0 +1,44 @@
+﻿<Page x:Class="Avto_Salons.TestDrivee"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Avto_Salons"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TestDrivee">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition  Height="280"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid x:Name="avto" Grid.ColumnSpan="4" SelectionChanged="avto_SelectionChanged" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id_testdrive}" />
+                <DataGridTextColumn Header="Сотрудники ID" Binding="{Binding Employees.surname}" />
+                <DataGridTextColumn Header="Клиент ID" Binding="{Binding Customers.surname}" />
+                <DataGridTextColumn Header="Машина ID" Binding="{Binding Cars.year}"/>
+                <DataGridTextColumn Header="Дата и время тест-драйва" Binding="{Binding test_drive_date}"/>
+                <DataGridTextColumn Header="Коментарии" Binding="{Binding comments}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="Exit" Margin="0,237,0,-20" Content="Выход" Click="Exit_Click" Grid.Row="1" Grid.Column="3"/>
+        <Button x:Name="Add" Content="Добавить" Margin="0,237,0,-20" Grid.Row="1" Click="Add_Click"/>
+        <Button x:Name="Delete" Content="Удалить" Margin="0,237,0,-20" Grid.Row="1" Grid.Column="1" Click="Delete_Click"/>
+        <Button x:Name="Update" Content="Обновить" Grid.Column="2" Margin="0,237,0,-20" Grid.Row="1" Click="Update_Click"/>
+        <TextBox x:Name="datee" Text="Дата и время тест-драйва" Margin="0,150,199,96" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="commentt" Text="Коментарии" Margin="1,117,1,130" Grid.Row="1"/>
+        <TextBlock Text="вот так надо заполнить время: 2024-04-19 08:30:00.000" Grid.ColumnSpan="2" Margin="0,184,1,43" Grid.Row="1" Background="White"/>
+        <ComboBox x:Name="emp_id" Margin="199,16,1,205" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="cus_id" Margin="199,16,1,204" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="carr_id" Margin="0,16,0,205" Grid.Row="1" Grid.Column="3"/>
+    </Grid>
+</Page>

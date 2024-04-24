@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище SALON_AVTOModelContainer" CdmEntityContainer="SALON_AVTOEntities">
+    <EntitySetMapping Name="BrandModels">
+      <EntityTypeMapping TypeName="SALON_AVTOModel.BrandModels">
+        <MappingFragment StoreEntitySet="BrandModels">
+          <ScalarProperty Name="Id_brand_model" ColumnName="Id_brand_model" />
+          <ScalarProperty Name="brand_id" ColumnName="brand_id" />
+          <ScalarProperty Name="model_id" ColumnName="model_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Brands">
+      <EntityTypeMapping TypeName="SALON_AVTOModel.Brands">
+        <MappingFragment StoreEntitySet="Brands">
+          <ScalarProperty Name="Id_brands" ColumnName="Id_brands" />
+          <ScalarProperty Name="brand_name" ColumnName="brand_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cars">
+      <EntityTypeMapping TypeName="SALON_AVTOModel.Cars">
+        <MappingFragment StoreEntitySet="Cars">
+          <ScalarProperty Name="Id_cars" ColumnName="Id_cars" />
+          <ScalarProperty Name="brand_id" ColumnName="brand_id" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="quantity_available" ColumnName="quantity_available" />
+          <ScalarProperty Name="configuration_id" ColumnName="configuration_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Configurations">
+      <EntityTypeMapping TypeName="SALON_AVTOModel.Configurations">
+        <MappingFragment StoreEntitySet="Configurations">
+          <ScalarProperty Name="Id_config" ColumnName="Id_config" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="SALON_AVTOModel.Customers">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="Id_customers" ColumnName="Id_customers" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="middle_name" ColumnName="middle_name" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="SALON_AVTOModel.Employees">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="Id_employee" ColumnName="Id_employee" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Models">
+      <EntityTypeMapping TypeName="SALON_AVTOModel.Models">
+        <MappingFragment StoreEntitySet="Models">
+          <ScalarProperty Name="Id_model" ColumnName="Id_model" />
+          <ScalarProperty Name="model_name" ColumnName="model_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payment_Method">
+      <EntityTypeMapping TypeName="SALON_AVTOModel.Payment_Method">
+        <MappingFragment StoreEntitySet="Payment_Method">
+          <ScalarProperty Name="Id_payment" ColumnName="Id_payment" />
+          <ScalarProperty Name="method" ColumnName="method" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="SALON_AVTOModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="ID_Role" ColumnName="ID_Role" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceOrderCars">
+      <EntityTypeMapping TypeName="SALON_AVTOModel.ServiceOrderCars">
+        <MappingFragment StoreEntitySet="ServiceOrderCars">
+          <ScalarProperty Name="Id_ServiceOrderCars" ColumnName="Id_ServiceOrderCars" />
+          <ScalarProperty Name="service_order_Id" ColumnName="service_order_Id" />
+          <ScalarProperty Name="car_Id" ColumnName="car_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceOrders">
+      <EntityTypeMapping TypeName="SALON_AVTOModel.ServiceOrders">
+        <MappingFragment StoreEntitySet="ServiceOrders">
+          <ScalarProperty Name="Id_ServiceOrders" ColumnName="Id_ServiceOrders" />
+          <ScalarProperty Name="employee_Id" ColumnName="employee_Id" />
+          <ScalarProperty Name="customer_Id" ColumnName="customer_Id" />
+          <ScalarProperty Name="order_date" ColumnName="order_date" />
+          <ScalarProperty Name="payment_id" ColumnName="payment_id" />
+          <ScalarProperty Name="total_amount" ColumnName="total_amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Supplier">
+      <EntityTypeMapping TypeName="SALON_AVTOModel.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="Id_supplier" ColumnName="Id_supplier" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="company_address" ColumnName="company_address" />
+          <ScalarProperty Name="company_phone" ColumnName="company_phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupplierCars">
+      <EntityTypeMapping TypeName="SALON_AVTOModel.SupplierCars">
+        <MappingFragment StoreEntitySet="SupplierCars">
+          <ScalarProperty Name="Id_SupplierCars" ColumnName="Id_SupplierCars" />
+          <ScalarProperty Name="supplier_Id" ColumnName="supplier_Id" />
+          <ScalarProperty Name="car_Id" ColumnName="car_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestDrives">
+      <EntityTypeMapping TypeName="SALON_AVTOModel.TestDrives">
+        <MappingFragment StoreEntitySet="TestDrives">
+          <ScalarProperty Name="Id_testdrive" ColumnName="Id_testdrive" />
+          <ScalarProperty Name="employee_Id" ColumnName="employee_Id" />
+          <ScalarProperty Name="customer_Id" ColumnName="customer_Id" />
+          <ScalarProperty Name="car_Id" ColumnName="car_Id" />
+          <ScalarProperty Name="test_drive_date" ColumnName="test_drive_date" />
+          <ScalarProperty Name="comments" ColumnName="comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="SALON_AVTOModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password_Users" ColumnName="Password_Users" />
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientInformation">
+      <EntityTypeMapping TypeName="SALON_AVTOModel.ClientInformation">
+        <MappingFragment StoreEntitySet="ClientInformation">
+          <ScalarProperty Name="CustomerSurname" ColumnName="CustomerSurname" />
+          <ScalarProperty Name="PaymentMethod" ColumnName="PaymentMethod" />
+          <ScalarProperty Name="ConfigurationPrice" ColumnName="ConfigurationPrice" />
+          <ScalarProperty Name="ConfigurationName" ColumnName="ConfigurationName" />
+          <ScalarProperty Name="CarPrice" ColumnName="CarPrice" />
+          <ScalarProperty Name="CarYear" ColumnName="CarYear" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="EmployeeEmail" ColumnName="EmployeeEmail" />
+          <ScalarProperty Name="EmployeePosition" ColumnName="EmployeePosition" />
+          <ScalarProperty Name="EmployeeSurname" ColumnName="EmployeeSurname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

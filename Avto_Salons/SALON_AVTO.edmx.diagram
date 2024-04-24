@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a40933a8a2b94cdeb5b561853ba06b9a" Name="Diagram1" ZoomLevel="69">
+        <EntityTypeShape EntityType="SALON_AVTOModel.BrandModels" Width="1.5" PointX="8.625" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SALON_AVTOModel.Brands" Width="1.5" PointX="8.625" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SALON_AVTOModel.Cars" Width="1.5" PointX="15.875" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SALON_AVTOModel.Configurations" Width="1.5" PointX="13.625" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SALON_AVTOModel.Customers" Width="1.5" PointX="13.625" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SALON_AVTOModel.Employees" Width="1.5" PointX="13.625" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SALON_AVTOModel.Models" Width="1.5" PointX="10.625" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SALON_AVTOModel.Payment_Method" Width="1.5" PointX="13.625" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SALON_AVTOModel.Roles" Width="1.5" PointX="11.375" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SALON_AVTOModel.ServiceOrderCars" Width="1.5" PointX="18.125" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SALON_AVTOModel.ServiceOrders" Width="1.5" PointX="15.875" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SALON_AVTOModel.Supplier" Width="1.5" PointX="15.875" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SALON_AVTOModel.SupplierCars" Width="1.5" PointX="18.125" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SALON_AVTOModel.TestDrives" Width="1.5" PointX="12.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SALON_AVTOModel.Users" Width="1.5" PointX="13.625" PointY="20.5" IsExpanded="true" />
+        <AssociationConnector Association="SALON_AVTOModel.FK__BrandMode__brand__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="SALON_AVTOModel.FK__BrandMode__model__74AE54BC" ManuallyRouted="false" />
+        <AssociationConnector Association="SALON_AVTOModel.FK__Cars__brand_id__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="SALON_AVTOModel.FK__Cars__configurat__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="SALON_AVTOModel.FK__ServiceOr__car_I__6D0D32F4" ManuallyRouted="false" />
+        <AssociationConnector Association="SALON_AVTOModel.FK__SupplierC__car_I__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="SALON_AVTOModel.FK__TestDrive__car_I__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="SALON_AVTOModel.FK__ServiceOr__custo__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="SALON_AVTOModel.FK__TestDrive__custo__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="SALON_AVTOModel.FK__Employees__Role___534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="SALON_AVTOModel.FK__ServiceOr__emplo__6754599E" ManuallyRouted="false" />
+        <AssociationConnector Association="SALON_AVTOModel.FK__TestDrive__emplo__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="SALON_AVTOModel.FK__ServiceOr__payme__693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="SALON_AVTOModel.FK__Users__Role_ID__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="SALON_AVTOModel.FK__ServiceOr__servi__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="SALON_AVTOModel.FK__SupplierC__suppl__6FE99F9F" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SALON_AVTOModel.ClientInformation" Width="1.5" PointX="0.75" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
